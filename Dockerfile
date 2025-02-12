@@ -21,4 +21,4 @@ COPY . .
 USER nonroot
 
 # Use exec form of ENTRYPOINT for proper signal handling
-ENTRYPOINT ["python", "pipeline/main.py"]
+ENTRYPOINT ["python", "main.py"]
