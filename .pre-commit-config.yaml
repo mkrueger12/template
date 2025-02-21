@@ -3,7 +3,7 @@ repos:
     rev: v0.6.9
     hooks:
     -   id: ruff
-        args: [--fix]
+        args: ['--fix', '--extend-select=T201,TRY']
     -   id: ruff-format
 
 -   repo: https://github.com/pre-commit/pre-commit-hooks
@@ -19,4 +19,4 @@ repos:
   rev: v2.3.0
   hooks:
     - id: codespell
-      args: ["-L guideli, --write-changes"]
+      args: ["--write-changes"]
