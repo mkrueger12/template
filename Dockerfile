@@ -20,5 +20,4 @@ COPY . .
 
 USER nonroot
 
-# Use exec form of ENTRYPOINT for proper signal handling
 ENTRYPOINT ["python", "main.py"]
