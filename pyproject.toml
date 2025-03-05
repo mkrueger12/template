@@ -1,6 +1,9 @@
+# Use uv https://docs.astral.sh/uv/getting-started/
 [project]
 name = "projectName"
 version = "0.1.0"
 description = "project description"
 readme = "README.md"
-dependencies = []
+dependencies = [
+    "pre-commit>=4.1.0",
+]
