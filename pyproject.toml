@@ -1,1 +1,6 @@
-
+[project]
+name = "projectName"
+version = "0.1.0"
+description = "project description"
+readme = "README.md"
+dependencies = []
