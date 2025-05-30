@@ -2,7 +2,10 @@
 FROM cgr.dev/chainguard/wolfi-base
 
 # specify the python version
-ARG version=3.12
+ARG version=3.13
+
+# Copy UV binary from official image
+#COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 
 WORKDIR /app
 
