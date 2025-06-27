@@ -96,4 +96,4 @@ Here is an example response:
 
 
 
-- Add labels to the PR. Here are the labels [bug, documentation, enhancement]: !`gh pr create -l "bug"`
+- Add labels to the PR. Here are the labels [bug, documentation, enhancement]: `gh pr create -l "bug"`
