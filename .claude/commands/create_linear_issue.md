@@ -1,5 +1,5 @@
 ---
-allowed-tools: Bash(grep:*), Bash(ls:*), Bash(tree), linear-server:create_issue
+allowed-tools: Bash(grep:*), Bash(ls:*), Bash(tree), linear-server:*, Bash(linear-server:*)
 description: Create a linear issue based on the research you've done.
 ---
 
