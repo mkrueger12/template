@@ -7,7 +7,6 @@ description: Create a linear issue based on the research you've done.
 - Current directory: !`pwd`
 - Current files: !`ls -la`
 - Current tree: !`tree`
-- Linear Team: #$ARGUMENTS
 - Linear Project: #$ARGUMENTS
 
 
