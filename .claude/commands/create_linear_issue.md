@@ -1,5 +1,5 @@
 ---
-allowed-tools: Bash(grep:*), Bash(ls:*), Bash(tree)
+allowed-tools: Bash(grep:*), Bash(ls:*), Bash(tree), linear-server:create_issue
 description: Create a linear issue based on the research you've done.
 ---
 
@@ -17,6 +17,8 @@ Generate linear issues based on the research you've done. Make sure it is detail
 Each issue should be a distinct task but if there are multiple tasks that are related to each other note that below and make sure the issues are marked as related in linear. If issues rely on each other, make sure the are added in sequence to linear.
 
 Add all issues to the todo section in Linear.
+
+As needed, create an issue and add sub-issues if it logically makes sense.
 
 ## Template:
 
