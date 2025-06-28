@@ -87,7 +87,7 @@ Here is an example response:
     ```
     - If no edge cases are found, say "No edge cases found"
 
-## (For Reviewer) Test Plan
+## Reviewer Test Plan
 - Provide a list of tests or processes the human reviewer should consider to be confident in the changes.
 
 - [ ] Test Case 1
