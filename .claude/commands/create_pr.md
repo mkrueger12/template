@@ -1,5 +1,5 @@
 ---
-allowed-tools: Bash(git add:*), Bash(git status:*), Bash(git commit:*), Bash(git branch:*), Bash(git log:*), Bash(gh pr:*), Bash(git diff:*)
+allowed-tools: Bash(git:*), Bash(git add:*), Bash(git status:*), Bash(git commit:*), Bash(git branch:*), Bash(git log:*), Bash(gh pr:*), Bash(git diff:*)
 description: Create a git PR for the current branch
 ---
 
