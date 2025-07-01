@@ -11,7 +11,7 @@ description: You are tasked with implementing a feature/fix for the following li
 
 ## Instructions
 
-You must first pull the linear issue using the linear-server MCP.
+You must first pull the linear issue using the linear-server MCP and mark it as "In Progress".
 
 ### 1. Analyze the Requirements
 - Break down the issue into testable units
