@@ -56,6 +56,7 @@ You must first pull the linear issue using the linear-server MCP.
 - Add appropriate documentation/comments
 - Ensure all new code has test coverage
 - Update any affected existing tests
+- Always use the latest stable and compatible version of a package. Use a subagent to search the web for the latest version.
 
 ## Deliverables
 
