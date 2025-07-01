@@ -39,6 +39,14 @@ You must first pull the linear issue using the linear-server MCP and mark it as 
 - No method should be more than 60 lines
 - Each method should have a least two assertions
 
+#### d) Commit Phase
+- Commit the changes to the repository
+- The commit message should be a short description of the changes made
+- The commit message should be in the format of "feat: add feature" or "fix: fix bug"
+- The commit message should be in the language of the codebase
+- The commit message should be in the present tense
+- The commit message should be in the active voice
+
 ### 3. Implementation Order
 - Start with the simplest test case
 - Progress to more complex scenarios
