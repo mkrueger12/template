@@ -1,5 +1,6 @@
 {
   "includeCoAuthoredBy": false,
+  "preferredNotifChannel": "terminal_bell",
   "env": {
     "CLAUDE_CODE_ENABLE_TELEMETRY": "0",
     "DISABLE_TELEMETRY": "1"
