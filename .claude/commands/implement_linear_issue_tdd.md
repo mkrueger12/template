@@ -1,5 +1,5 @@
 ---
-allowed-tools: Bash(grep:*), Bash(ls:*), Bash(git commit:*), WebFetch(domain:*)
+allowed-tools: Bash(grep:*), Bash(ls:*), Bash(git commit:*), WebFetch(domain:*), Write(file:*)
 description: You are tasked with implementing a feature/fix for the following linear issue using a strict test-driven development (TDD) approach. Follow the Red-Green-Refactor cycle throughout the implementation.
 ---
 

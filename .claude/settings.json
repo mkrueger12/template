@@ -1,4 +1,9 @@
 {
+  "includeCoAuthoredBy": false,
+  "env": {
+    "CLAUDE_CODE_ENABLE_TELEMETRY": "0",
+    "DISABLE_TELEMETRY": "1"
+  },
   "permissions": {
     "allow": [
       "Bash(git:*)",
@@ -32,7 +37,8 @@
       "Bash(npm run build:*)",
       "mcp__linear-server__list_teams",
       "mcp__linear-server__list_projects",
-      "mcp__linear-server__list_issues"
+      "mcp__linear-server__list_issues",
+      "WebFetch(domain:*)"
     ],
     "deny": []
   }
