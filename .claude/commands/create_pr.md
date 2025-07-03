@@ -49,7 +49,7 @@ Format:
 
     - File path
     - Line numbers
-    - Brief description of the edge case including why this may be an issue
+    - Brief description of the edge case including why this may be an issue. It is important to include the potential impact of the edge case on the system or user experience.
     - Block of affected code using code block syntax
     - Prompt for AI agent to fix the edge case. This should include the file path, line numbers, and a detailed description of the fix.
 
