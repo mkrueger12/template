@@ -1,6 +1,6 @@
 ---
 allowed-tools: Bash(grep:*), Bash(ls:*), Bash(tree), linear-server:*, Bash(linear-server:*)
-description: Create a linear issue based on the research you've done.
+description: Clean up code based on a set of coding principles.
 ---
 
 ## Context
