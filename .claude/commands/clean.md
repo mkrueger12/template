@@ -8,6 +8,7 @@ description: Clean up code based on a set of coding principles.
 - Current files: !`ls -la`
 - Current branch: !`git branch --show-current`
 - Changed files: !`git diff --name-only`
+- Precommit Results: !`pre-commit run --all-files`
 
 ## Task
 
@@ -18,8 +19,9 @@ As a senior engineer, perform a thorough code review and refactoring of all chan
 - Identify Changed Files: Review only the files that have been modified in this branch compared to main
 - Apply Refactoring Principles: For each principle below, create a dedicated sub-agent to:
 
-1. Analyze the changed code against that specific principle
-2. Implement refactoring if violations are found
+1. Fix the precommit issues
+2. Analyze the changed code against that specific principle
+3. Implement refactoring if violations are found
 
 Not every checklist item needs to result in a change.
 
