@@ -28,6 +28,7 @@ User Story: Provide a user story for the issue.
 Work to be done: Provide a detailed description of the work to be done.
 Location of changes: Provide a detailed description of the location of the changes.
 Definition of done: Provide a definition of done for the issue in a checklist format.
+Testing Strategy: A strategy for testing the functionality of the issue works. This should be a real world test if possible.
 Related issues: Provide a list of related issues.
 
 
