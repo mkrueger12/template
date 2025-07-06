@@ -11,7 +11,7 @@ description: Clean up code based on a set of coding principles.
 
 ## Task
 
-As a senior engineer, perform a thorough code review and refactoring of all changes in the current branch. Focus exclusively on files modified in this branch (not the entire codebase). Only review the code that has been added or changed in the current branch.
+As a senior engineer, perform a thorough code review and refactoring of all changes in the current branch. Focus exclusively on files modified in this branch (not the entire codebase). Only review the code that has been added or changed in the current branch. Always compare the changes against the develop branch. Do not refactor test files.
 
 ### Process
 
