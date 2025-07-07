@@ -1,5 +1,5 @@
 ---
-allowed-tools: Bash(grep:*), Bash(ls:*), Bash(tree), Bash(git:*), Bash(cat:*), Bash(find:*)
+allowed-tools: Bash(grep:*), Bash(ls:*), Bash(tree), Bash(git:*), Bash(cat:*), Bash(find:*), Bash(gh pr view), Bash(gh pr:*)
 description: Respond to PR review comments with fixes and detailed explanations
 ---
 
