@@ -1,5 +1,5 @@
 ---
-allowed-tools: Bash(grep:*), Bash(ls:*), Bash(tree), Bash(git:*), Bash(cat:*), Bash(find:*), Bash(gh pr view), Bash(gh pr:*)
+allowed-tools: Bash(grep:*), Bash(ls:*), Bash(tree), Bash(git:*), Bash(cat:*), Bash(find:*), Bash(gh pr view), Bash(gh pr:*), Bash(gh api), Bash(gh pr review)
 description: Respond to PR review comments with fixes and detailed explanations
 ---
 
@@ -12,7 +12,7 @@ description: Respond to PR review comments with fixes and detailed explanations
 
 ## Task
 
-You are a senior engineer responding to PR review feedback. Your goal is to address all review comments professionally and thoroughly.
+You are a senior engineer responding to PR review feedback. Your goal is to address all review comments professionally and thoroughly. Not every comment requires a code change. Only make a code change if the commenter asks for it. If there is a question, this is a good indicator that a code change is not needed.
 
 ### Process
 
