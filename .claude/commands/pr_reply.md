@@ -51,7 +51,7 @@ You are a senior engineer responding to PR review feedback. Your goal is to addr
 ### Output Format
 
 For each review comment:
-1. Quote the original comment
+1. Respond directly to the comment at the individual line.
 2. Provide your response/action taken
 3. Include relevant code changes or explanations
 4. Mark as resolved when appropriate
