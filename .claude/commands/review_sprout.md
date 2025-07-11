@@ -1,6 +1,6 @@
 ---
 allowed-tools: Bash(grep:*), Bash(ls:*), Bash(tree), Bash(git:*), Bash(cat:*), Bash(find:*)
-description: Provide a comprehensive review of the PR and address all review comments.
+description: Provide a comprehensive review of the PR and address all review comments for the Cannflo/Sprout project.
 ---
 
 ## Context
