@@ -138,24 +138,16 @@ Consider the long-term implications of the changes and whether they align with t
 Finally, recognize that code review is an iterative process. Be prepared to engage in discussions with the developer, provide clarification on your feedback, and collaborate on finding the best solutions. Remember that the goal is not just to catch problems, but to share knowledge, maintain code quality, and support the professional growth of your team members.
 
 # Merge Request Review Report Instuctions
+Generate a report based on the following template. Make sure the report is concise and to the point. Only provide data in the template provided below. Generic comments should be avoided such as "Test coverage is good." The goal is to hand the report to a developer so they immediately know where the issues are, why they are issues, and how to fix them in the context of the codebase.
 
 **MR ID:** [MR-123] 
 **Branch:** [feature/branch-name] → [target-branch]
 
 ## Executive Summary
 
-**Total Issues Found:** [X]
-- Fix Now: [X]
-- Fix After Merge: [X] 
-- Informational: [X]
-
-**Overall Assessment:** [Ready for merge / Requires fixes before merge / Needs significant rework]
-
-**Key Concerns:** [Brief summary of the most critical findings]
+**Overall Summary:** Provide a summary of the key changes of the merge request.
 
 ## Issues by Priority
-
-### Fix Now (Critical - Must resolve before merge)
 
 #### Issue 1: [Brief descriptive title]
 **Location:** `src/components/UserAuth.js:45-52`  
