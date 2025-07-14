@@ -20,8 +20,6 @@ You must first pull the linear issue using the linear-server MCP and mark it as 
 
 ### 2. Follow TDD Cycle for Each Behavior
 
-- First each step of this use a sub-agent to perform the task. For example, have one sub-agent write the Failing Test, another sub-agent to write the code, and another for the refactor phase.
-
 #### a) Red Phase (Write Failing Test)
 - Write a test that describes the expected behavior
 - Run the test to ensure it fails with the expected error
