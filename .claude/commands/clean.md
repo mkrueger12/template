@@ -40,8 +40,6 @@ Not every checklist item needs to result in a change.
 
 ### Code Quality
 
-    Add runtime assertions to critical methods (minimum 2 per critical method)
-    Assertions should validate key assumptions about state and parameters
     Consider consolidating scattered minor changes into cohesive classes
 
 ### Design Priorities (in order)
