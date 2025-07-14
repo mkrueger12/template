@@ -16,7 +16,7 @@ As a senior engineer, perform a thorough code review and refactoring of all chan
 ### Process
 
 - Identify Changed Files: Review only the files that have been modified in this branch compared to main
-- Apply Refactoring Principles: For each principle below, create a dedicated sub-agent to:
+- Apply Refactoring Principles:
 
 1. Analyze the changed code against that specific principle
 2. Implement refactoring if violations are found
