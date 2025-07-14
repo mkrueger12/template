@@ -37,7 +37,6 @@ You must first pull the linear issue using the linear-server MCP and mark it as 
 - Run all tests to ensure nothing broke
 - Decompose methods into smaller methods if needed
 - No method should be more than 60 lines
-- Each method should have a least two assertions
 
 #### d) Commit Phase
 - Commit the changes to the repository
