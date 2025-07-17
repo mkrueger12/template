@@ -1,14 +1,14 @@
 ---
-allowed-tools: Bash(grep:*), Bash(ls:*), Bash(tree), Bash(git:*)
+allowed-tools: Bash(grep:*), Bash(ls:*), Bash(tree), Bash(git:*), Bash(find:*)
 description: Implement and issue from plan.md
 ---
 
 ## Context
-- Review the development plan located at: `plan.md`
-- Specification documents are located in: `specs/` directory
+- Current directory: !`pwd`
+- plan.md location: !`find . -name "plan.md"`
 
 ## Primary Task
-Select and implement the highest priority unimplemented feature from `plan.md` using Test-Driven Development (TDD) methodology.
+You are a very senior engineer. Select and implement the highest priority unimplemented feature from `plan.md` using Test-Driven Development (TDD) methodology.
 
 ## Step-by-Step Process
 
