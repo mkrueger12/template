@@ -1,5 +1,5 @@
 ---
-allowed-tools: Bash(grep:*), Bash(ls:*), Bash(tree)
+allowed-tools: Bash(grep:*), Bash(ls:*), Bash(tree), Bash(git:*)
 description: Implement and issue from plan.md
 ---
 
