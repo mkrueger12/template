@@ -41,6 +41,6 @@
       "mcp__linear-server__list_issues",
       "WebFetch(domain:*)"
     ],
-    "deny": []
+    "deny": ["Bash(rm:*)", "Bash(rm -rf:*)"]
   }
 }
