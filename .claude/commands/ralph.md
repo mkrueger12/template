@@ -52,6 +52,7 @@ feat: Implement [feature name] from plan.md
 ```
 
 ## Output
-- When you are done and all success criteria are met return a JSON object. If there are still items to be implmented then return { "continue": true }
 
-- If all items in `plan.md` are implemented then return { "continue": false }
+- When you are done and all success criteria are met return a JSON object. If there are still items to be implmented then return: "True"
+- If all items in `plan.md` are implemented then return: "False"
+- Do not return anything else.
