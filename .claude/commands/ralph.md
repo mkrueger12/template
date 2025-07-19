@@ -50,3 +50,8 @@ feat: Implement [feature name] from plan.md
 - Updated plan.md status to 'implemented'
 - Follows TDD methodology
 ```
+
+## Output
+- When you are done and all success criteria are met return a JSON object. If there are still items to be implmented then return { "continue": true }
+
+- If all items in `plan.md` are implemented then return { "continue": false }
