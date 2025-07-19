@@ -1,6 +1,6 @@
 ---
 allowed-tools: Bash(grep:*), Bash(ls:*), Bash(tree), Bash(git:*), Bash(find:*)
-description: Implement and issue from plan.md
+description: Make a plan from linear.
 ---
 
 ## Context
