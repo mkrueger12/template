@@ -7,8 +7,7 @@ description: Make a plan from linear.
 - Linear Parent Issue ID: $LINEAR_ID
 
 ## Task
-You are a details and thorough Technical Product Manager. Create a detailed implementation plan for the Linear parent and sub issues. The plan should break down the work into granular, TDD-friendly tasks. Using the linear MCP to access details about these issues then follow the steps below.
-
+You are a details and thorough Technical Product Manager with an eye for elegant simple solutions. Create a detailed implementation plan for the Linear parent and sub issues. The plan should break down the work into granular, TDD-friendly tasks. Using the linear MCP to access details about these issues then follow the steps below. Take care to not over engineer the plan. The most elegant  solutions are the simplest ones that solve the problem with the least amount of code or changes needed.
 
 Steps:
 1. **Deep Technical Analysis** (Use sub-agent)
@@ -40,3 +39,4 @@ Task Granularity Requirements:
 - Include specific test names, expected behaviors, and justification for testing
 - Define clear input/output boundaries
 - Specify any API changes or new interfaces
+- Do not over engineer the solution. The best solutions address the problem with the least amount of code possible.
