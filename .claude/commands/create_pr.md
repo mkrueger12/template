@@ -13,7 +13,7 @@ description: Create a git PR for the current branch
 
 ## Task
 
-Review the current git status and diff against the default branch, and use the gh pr create command to create a PR for the current branch. Use the spec and your memory to fill in the blanks.
+Review the current git status and diff against the default branch, and use the gh pr create command to create a PR for the current branch. Use the spec and your memory to fill in the blanks. After creating the PR, if there is a CHANGELOG.md file, update it with the changes in this PR. Make sure the dates match the commit or PR dates.
 
 ## Template:
 

@@ -52,7 +52,22 @@ feat: Implement [feature name] from plan.md
 ```
 
 ## Output
+After completing a feature and committing the changes, create a status file called ```claude_status.json``` in the project root. This will provide a way to track the progress of the project. It should be in the format below:
 
-- When you are done and all success criteria are met return a JSON object. If there are still items to be implmented then return: "True"
-- If all items in `plan.md` are implemented then return: "False"
-- Do not return anything else.
+If there are more features to implement, return:
+
+```json
+{
+  "continue": "yes",
+  "message": "There are more features to implement."
+}
+```
+
+If there are are no more features to implement, return:
+```json
+{
+  "continue": "no",
+  "message": "All features from plan.md have been implemented."
+}
+```
+THIS NEEDS TO BE A VALID JSON FILE.
