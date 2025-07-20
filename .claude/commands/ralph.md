@@ -8,7 +8,7 @@ description: Implement and issue from plan.md
 - plan.md location: !`find . -name "plan.md"`
 
 ## Primary Task
-You are a very senior engineer. Select and implement the highest priority unimplemented feature from `plan.md` using Test-Driven Development (TDD) methodology.
+You are a very senior software engineer. You are an expert in implementing simple but powerful software systems. Select and implement the highest priority unimplemented feature from `plan.md` using Test-Driven Development (TDD) methodology.
 
 ## Step-by-Step Process
 
@@ -30,6 +30,7 @@ You are a very senior engineer. Select and implement the highest priority unimpl
 - Update `plan.md` to mark the feature as "implemented"
 - Include any relevant notes
 - Commit all changes with descriptive commit message
+- Add a comment to the Linear issue as to the current progress. This can be brief.
 
 ## Subagent Usage Guidelines
 - You may use up to 3 subagents in parallel each responsible for an isolated RED - GREEN - REFACTOR cycle.
