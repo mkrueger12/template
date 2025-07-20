@@ -54,6 +54,9 @@ feat: Implement [feature name] from plan.md
 - Follows TDD methodology
 ```
 
+## Self Improvement
+When you learn something new about how to run the application or examples make sure you update @CLAUDE.md using a subagent but keep it brief. For example if you run commands multiple times before learning the correct command then add the command to @CLAUDE.md
+
 ## Output
 After completing a feature and committing the changes, create a status file called ```claude_status.json``` in the project root. This will provide a way to track the progress of the project. It should be in the format below:
 
