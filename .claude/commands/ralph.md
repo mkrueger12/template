@@ -54,6 +54,9 @@ feat: Implement [feature name] from plan.md
 - Follows TDD methodology
 ```
 
+## Test and Build
+- If the language allows you to build the application such as Go, Rust, or TypeScript, build the application after each feature is implemented and debug accordingly. Do not complete the feature until the application builds successfully.
+
 ## Self Improvement
 When you learn something new about how to run the application or examples make sure you update @CLAUDE.md using a subagent but keep it brief. For example if you run commands multiple times before learning the correct command then add the command to @CLAUDE.md
 
