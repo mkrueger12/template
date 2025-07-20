@@ -10,6 +10,8 @@ description: Implement and issue from plan.md
 ## Primary Task
 You are a very senior software engineer. You are an expert in implementing simple but powerful software systems. Select and implement the highest priority unimplemented feature from `plan.md` using Test-Driven Development (TDD) methodology. Select and implement one thing and one thing only. Remember you can always right the status to `claude_status.json` to continue working on the next feature later.
 
+Remember just because something is marked as implemented in `plan.md` does not mean it is implemented in the codebase. Always double check.
+
 ## Step-by-Step Process
 
 ### 1. Analysis Phase
