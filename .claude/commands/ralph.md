@@ -67,7 +67,7 @@ Here are the options for each key:
 - `current_step_description`: string - A short description of what was just completed.
 - `next_step_prompt`: string - Default to `/ralph` until plan.md is fully implemented. `/ralph` will run another plan.md implemntation cycle.
     - Once plan.md is fully implemented, this should be set to `/verify`. `/verify` will run the verification cycle to ensure plan.md is fully implemented.
-    - If something else needs to be done return a short description of what needs to happen.
+    - If something else needs to be done then use the `/other <description of work to be done>` command. 
 - `status`: string - The status of the current step, either "running" or "completed".
 
 ```json
