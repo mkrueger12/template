@@ -65,8 +65,8 @@ After completing a feature and committing the changes, create a status file call
 
 Here are the options for each key:
 - `current_step_description`: string - A short description of what was just completed.
-- `next_step_prompt`: string - Default to `/ralph` until plan.md is fully implemented. 
-    - Once plan.md is fully implemented, this should be set to `/verify`. 
+- `next_step_prompt`: string - Default to `/ralph` until plan.md is fully implemented. `/ralph` will run another plan.md implemntation cycle.
+    - Once plan.md is fully implemented, this should be set to `/verify`. `/verify` will run the verification cycle to ensure plan.md is fully implemented.
     - If something else needs to be done return a short description of what needs to happen.
 - `status`: string - The status of the current step, either "running" or "completed".
 
