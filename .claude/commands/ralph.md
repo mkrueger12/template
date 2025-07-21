@@ -61,22 +61,19 @@ feat: Implement [feature name] from plan.md
 When you learn something new about how to run the application or examples make sure you update @CLAUDE.md using a subagent but keep it brief. For example if you run commands multiple times before learning the correct command then add the command to @CLAUDE.md
 
 ## Output
-After completing a feature and committing the changes, create a status file called ```claude_status.json``` in the project root. This will provide a way to track the progress of the project. It should be in the format below:
+After completing a feature and committing the changes, create a status file called ```claude_state.json``` in the project root. This will provide a way to track the progress of the project. It should be in the format below:
 
-If there are more features to implement, return:
+Here are the options for each key:
+- `orchestrator_id`: The ID of the orchestrator that is responsible for the current step.
+- `current_step_description`: A short description of what was just completed.
+- `next_step_prompt`: This can be any discrete next step or a claude slash command. Until plan.md is fully implemented, this should be set to `/ralph`. Once plan.md is fully implemented, this should be set to `/verify`. If something else needs to happen return a short description of what needs to happen.
+- `status`: The status of the current step, either "running" or "completed".
 
 ```json
 {
-  "continue": "yes",
-  "message": "There are more features to implement."
+    "orchestrator_id": null,
+    "current_step_description": "Implemented task 1 from plan.md",
+    "next_step_prompt": "/ralph",
+    "status": "running"
 }
 ```
-
-If there are are no more features to implement, return:
-```json
-{
-  "continue": "no",
-  "message": "All features from plan.md have been implemented."
-}
-```
-THIS NEEDS TO BE A VALID JSON FILE.

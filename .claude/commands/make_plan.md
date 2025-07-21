@@ -49,3 +49,17 @@ Task Granularity Requirements:
 - Define clear input/output boundaries
 - Specify any API changes or new interfaces
 - Do not over engineer the solution. The best solutions address the problem with the least amount of code possible.
+- After you have created plan.md, double-check your work. We want a minimal, no-frills implementation of the linear issues. Review plan.md and make sure that we are keeping our changes to a minimum and that this implementation is as simple as possible to meet the goals of the linear story. Remove anything that you deem unnecessary. Think hard about this. 
+
+## Output
+- Before finishing write your current state to ```claude_state.json``` in the project root.
+- It should follow the following format with these values:
+
+```json
+{
+    "orchestrator_id": null,
+    "current_step_description": "Made a plan.md file",
+    "next_step_prompt": "/ralph",
+    "status": "running"
+}
+```
