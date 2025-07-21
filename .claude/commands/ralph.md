@@ -64,9 +64,11 @@ When you learn something new about how to run the application or examples make s
 After completing a feature and committing the changes, create a status file called ```claude_state.json``` in the project root. This will provide a way to track the progress of the project. It should be in the format below:
 
 Here are the options for each key:
-- `current_step_description`: A short description of what was just completed.
-- `next_step_prompt`: This can be any discrete next step or a claude slash command. Until plan.md is fully implemented, this should be set to `/ralph`. Once plan.md is fully implemented, this should be set to `/verify`. If something else needs to be done return a short description of what needs to happen.
-- `status`: The status of the current step, either "running" or "completed".
+- `current_step_description`: string - A short description of what was just completed.
+- `next_step_prompt`: string - Default to `/ralph` until plan.md is fully implemented. 
+    - Once plan.md is fully implemented, this should be set to `/verify`. 
+    - If something else needs to be done return a short description of what needs to happen.
+- `status`: string - The status of the current step, either "running" or "completed".
 
 ```json
 {
