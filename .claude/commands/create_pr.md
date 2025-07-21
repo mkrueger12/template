@@ -94,6 +94,21 @@ Here is an example response:
 - [ ] Test Case 2
 - [ ] Test Case 3
 
-
-
 - Add labels to the PR. Here are the labels [bug, documentation, enhancement]: `gh pr create -l "bug"`
+
+## Output
+After completing a feature and committing the changes, create a status file called ```claude_state.json``` in the project root. This will provide a way to track the progress of the project. It should be in the format below:
+
+Here are the options for each key:
+- `current_step_description`: A short description of what was just completed.
+- `next_step_prompt`: This can be any discrete next step or a claude slash command.
+- `status`: The status of the current step, either "running" or "completed". If a PR is successfully created, set this to "completed".
+
+```json
+{
+    "orchestrator_id": null,
+    "current_step_description": "Created a PR for the current branch",
+    "next_step_prompt": "Description of the work that needs to be done, if any.",
+    "status": "completed"
+}
+```

@@ -57,7 +57,6 @@ Task Granularity Requirements:
 
 ```json
 {
-    "orchestrator_id": null,
     "current_step_description": "Made a plan.md file",
     "next_step_prompt": "/ralph",
     "status": "running"
