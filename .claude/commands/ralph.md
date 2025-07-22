@@ -32,7 +32,7 @@ Remember just because something is marked as implemented in `plan.md` does not m
 - Update `plan.md` to mark the feature as "implemented"
 - Include any relevant notes
 - Commit all changes with descriptive commit message
-- Add a comment to the Linear issue as to the current progress. This can be brief.
+- Add a comment to the Linear issue as to the current progress. This can be brief. If you don't know the linear issue then skip updating linear.
 
 ## Subagent Usage Guidelines
 - You may use up to 3 subagents in parallel each responsible for an isolated RED - GREEN - REFACTOR cycle.
