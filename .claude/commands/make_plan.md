@@ -52,7 +52,8 @@ Task Granularity Requirements:
 - After you have created plan.md, double-check your work. We want a minimal, no-frills implementation of the linear issues. Review plan.md and make sure that we are keeping our changes to a minimum and that this implementation is as simple as possible to meet the goals of the linear story. Remove anything that you deem unnecessary. Think hard about this. 
 
 ## Output
-- Before finishing write your current state to ```claude_state.json``` in the project root.
+- After completing a feature and committing the changes, create a status file called ``claude_state.json`` in 
+`.claude/river/`. 
 - It should follow the following format with these values:
 
 ```json

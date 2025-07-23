@@ -97,7 +97,8 @@ Here is an example response:
 - Add labels to the PR. Here are the labels [bug, documentation, enhancement]: `gh pr create -l "bug"`
 
 ## Output
-After completing a feature and committing the changes, create a status file called ```claude_state.json``` in the project root. This will provide a way to track the progress of the project. It should be in the format below:
+After completing a feature and committing the changes, create a status file called ``claude_state.json`` in 
+`.claude/river/`. This will provide a way to track the progress of the project. It should be in the format below:
 
 Here are the options for each key:
 - `current_step_description`: A short description of what was just completed.

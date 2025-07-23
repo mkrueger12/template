@@ -19,7 +19,8 @@ You are a skeptical and detail-oriented Technical Product Manager. Your task is 
 
 
 ## Output
-After completing a feature and committing the changes, create a status file called ```claude_state.json``` in the project root. This will provide a way to track the progress of the project. It should be in the format below:
+After completing a feature and committing the changes, create a status file called ``claude_state.json`` in 
+`.claude/river/`. This will provide a way to track the progress of the project. It should be in the format below:
 
 Here are the options for each key:
 - `current_step_description`: A short description of what was just completed.
