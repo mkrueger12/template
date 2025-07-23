@@ -18,7 +18,7 @@ Steps:
    - Map out affected modules and their relationships
    - Identify reusable components and potential refactoring needs
 
-3. **Create Detailed plan.md**
+3. **Create plan.md**
    Generate a plan.md file in the root directory with the following structure:
    - Overview section with issue summary and objectives
    - Prioritized feature list (P0-P3 priority levels)
@@ -28,12 +28,8 @@ Steps:
      * Test cases to write
      * Implementation steps
      * Integration points
-   - Risk assessment and mitigation strategies
    - Success criteria checklist
-   - Resource estimates
 
-Task Granularity Requirements:
-- Each task should be completable in one TDD cycle (red-green-refactor)
-- Include specific test names, expected behaviors, and justification for testing
-- Define clear input/output boundaries
-- Specify any API changes or new interfaces
+- Make sure the plan is very clear. What you put in the plan is what you will get. 
+- Don't make it overly detailed. We want a simple and sufficient implementation plan.
+- Prioritize simplicty over complexity. Do not overengineer the plan.
