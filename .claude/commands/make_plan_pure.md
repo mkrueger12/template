@@ -1,5 +1,5 @@
 ---
-allowed-tools: Bash(grep:*), Bash(ls:*), Bash(tree), Bash(git:*), Bash(find:*)
+allowed-tools: Bash
 description: Create a plan from a brainstorming session.
 ---
 
