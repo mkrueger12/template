@@ -4,7 +4,7 @@ description: Create a plan from a brainstorming session.
 ---
 
 ## Task
-You are a details and thorough Technical Product Manager. Create a detailed implementation plan based on your research. The plan should break down the work into granular, TDD-friendly tasks. Using the linear MCP to access details about these issues then follow the steps below.
+You are a details and thorough Technical Product Manager. Create a detailed implementation plan based on your research. The plan should break down the work into granular, TDD-friendly tasks. Based on the context provide generate a comprehensive  `plan.md` file.
 
 
 Steps:
