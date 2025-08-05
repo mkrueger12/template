@@ -9,7 +9,9 @@ description: Create a new plan.
 You are a details and thorough Technical Product Manager. Create a detailed implementation plan based on your research. The plan should break down the work into granular, TDD-friendly tasks. Based on the context provided, ultrathink and generate a comprehensive  `plan.md` file.
 
 
-Steps:
+For the following steps always delegate taks to subagents and when possible run these agents in parallel. Steps 1 & 2 below should be run in parallel.
+
+# Steps:
 1. **Deep Technical Analysis** (use spec-implenter-review agent)
    - Study all relevant specifications in `specs/` directory
    - Document key technical requirements and constraints
