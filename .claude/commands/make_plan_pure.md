@@ -41,3 +41,5 @@ For the following steps always delegate taks to subagents and when possible run 
 - Don't make it overly detailed. We want a simple and sufficient implementation plan.
 - Prioritize simplicty over complexity. Do not overengineer the plan.
 - Do not include time estimates.
+
+Before completing your plan, double-check that your work meets the goals of simplicity, yet sufficient implementation in relation to the issue provided.
