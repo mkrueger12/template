@@ -24,9 +24,9 @@ Execute this agent to analyze and document the project's technical constraints:
 - Security constraints (authentication, authorization, TLS/SSL)
 
 2. Codebase Pattern Analyzer Agent (Run in Parallel)
-Execute this agent to map the application's architectural patterns:
+Execute this agent to map the application. Select the most relevant items below given the scope:
 
-**Scope of Analysis:**
+**Potential Scope of Analysis:**
 - Project structure and module organization
 - Design patterns implemented (e.g., MVC, microservices, event-driven)
 - Middleware and interceptor chains
