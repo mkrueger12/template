@@ -38,7 +38,7 @@ Pass all necessary context to the subagent. If you don't have the necessary cont
     - This agent DOES NOT need to run the test suite. Just review the commits and confirm that plan.md is updated accurately. 
 
 4. Functional Testing
-    - You need to functionally test the implementation that was just executed. This can take many forms, and you must think critically about the functional testing.
+    - You need to functionally test the implementation that was just executed. This can take many forms, and you must think critically about the functional testing. Make sure the testing is narrowly scoped to the GH issue being worked on.
 
     - Use @agent-functional-test-runner to execute the functional testing. If errors are found, delegate the fixes to a general-purpose sub-agent. Do not perform any functional testing or fixes yourself.
 
@@ -47,7 +47,13 @@ Pass all necessary context to the subagent. If you don't have the necessary cont
     - You MUST USE @agent-functional-test-runner.
 
 5. Cleanup
-- Use a general-purpose agent to ensure that any extra files or unnecessary files that were created during this feature development process have been removed.
+    - Use a general-purpose agent to ensure that any extra files or unnecessary files that were created during this feature development process have been removed. These will normally be extraneous markdown files. When in doubt, don't remove anything.
+
+6. Commit, push, create PR
+    - Use a general purpose subagent to commit and push all staged/unstaged changes then create a PR.
+
+7. PR Review
+    - Use a general purpose subagent to review the open PR. Pass the `/review` command to the subagent and ask it to fix only CRITICAL issues with the PR. Do not fix anything except CRITICAL issues that have a direct effect on the funcitonality of this application.
+    - If no CRITICAL issues are found, this workflow is done.
 
 Once all steps are complete, end.
-
