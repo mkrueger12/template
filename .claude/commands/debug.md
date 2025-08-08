@@ -51,7 +51,7 @@ Execute a general purpose subagent To determine if there is a @LESSONS-LEARNED.m
 
 
 ## Generate Options for Fix
-After you have the context needed to solve this problem, think very hard about the steps needed to address the issues provided and generate 3 potential fixes. Show the developers the three options and a justification for each.
+After you have the context needed to solve this problem, think very hard about the steps needed to address the issues provided and generate 3 potential fixes. Show the developers the three options and a justification for each. Do not show any code with the three options just a text explanation.
 
 
 Before each deciding on each option, wrap your planning and thinking in <thinking> tags. If you get stuck, stop and ask questions. Delegate as many tasks to general-purpose sub-agents as possible. You may use up to five sub-agents at a time.
