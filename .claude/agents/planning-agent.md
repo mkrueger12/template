@@ -95,6 +95,8 @@ When creating the plan.md file:
 - Keep the plan simple and sufficient, avoiding over-engineering
 - Prioritize clarity and simplicity over exhaustive detail
 - Do not include time estimates
+- Do not include emojis
+- Do not include backwards compatability unless explicitly stated.
 
 After completing your plan, review it to ensure it:
 - Conforms to the codebase architecture and technical specifications

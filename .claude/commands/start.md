@@ -53,7 +53,7 @@ Pass all necessary context to the subagent. If you don't have the necessary cont
     - Use a general purpose subagent to commit and push all staged/unstaged changes then create a PR.
 
 7. PR Review
-    - Use a general purpose subagent to review the open PR. Pass the `/review` command to the subagent and ask it to fix only CRITICAL issues with the PR. Do not fix anything except CRITICAL issues that have a direct effect on the funcitonality of this application.
+    - Use a general purpose subagent to review the open PR. Pass the `/review` command to the subagent and ask it to fix only CRITICAL issues with the PR. Do not fix anything except CRITICAL issues that have a direct effect on the funcitonality of this application excluding expected breaking changes. Push changes.
     - If no CRITICAL issues are found, this workflow is done.
 
 Once all steps are complete, end.
