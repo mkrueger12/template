@@ -35,6 +35,7 @@ Pass all necessary context to the subagent. If you don't have the necessary cont
 
 3. Verify plan.md Implementation
     - Ask a general-purpose sub-agent to study the codebase and the recent Git history, compare it against `plan.md`, and determine if the plan is fully implemented. If the plan is not fully implemented, return to step 2. If it is fully implemented, continue to step 4.
+    - This agent DOES NOT need to run the test suite. Just review the commits and confirm that plan.md is updated accurately. 
 
 4. Functional Testing
     - You need to functionally test the implementation that was just executed. This can take many forms, and you must think critically about the functional testing.
