@@ -67,10 +67,6 @@ Use the following structure for your plan.md file:
 ## Overview
 [Provide a brief summary of the issue and main objectives]
 
-## Features
-[List each feature, broken down into atomic tasks]
-
-### Feature 1: [Feature Name]
 #### Task 1.1: [Task Name]
 - Acceptance Criteria:
   * [Clear, testable criteria]
