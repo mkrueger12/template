@@ -67,6 +67,7 @@ Use the following structure for your plan.md file:
 ## Overview
 [Provide a brief summary of the issue and main objectives]
 
+[Feature 1]
 #### Task 1.1: [Task Name]
 - Acceptance Criteria:
   * [Clear, testable criteria]

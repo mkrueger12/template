@@ -25,12 +25,12 @@ Pass all necessary context to the subagent. If you don't have the necessary cont
     - Continue this pattern until you are satisfied with plan.md then move to the next step.
 
 2. Evaluate and Select
-    - Review plan.md and select the most important UNIMPLEMENTED task from the plan.
-    - Pass the selected task to @agent-implementation-agent with relevant context.
-    - When the agent is done, verify that it has marked the task that it implemented as complete in `plan.md` and repeat this task until the entire `plan.md` file is implemented.
-    - If plan.md is not If `plan.md` is fully implemented, then repeat this task. Select the most important unimplemented feature from the plan and then pass the selected feature to @agent-implementation-agent with relevant context.
-    - You may delegate parallel tasks if they do not overlap at all or block each other.
-    - You MUST USE @agent-implementer-agent. Never implement a task yourself.
+    - Review plan.md and select the most important UNIMPLEMENTED feature from the plan.
+    - Pass the selected feature to @agent-implementation-agent with relevant context.
+    - When the agent is done, verify that it has marked the feature that it implemented as complete in `plan.md` and repeat this feature until the entire `plan.md` file is implemented.
+    - If plan.md is not If `plan.md` is fully implemented, then repeat this feature. Select the most important unimplemented feature from the plan and then pass the selected feature to @agent-implementation-agent with relevant context.
+    - You may delegate parallel feature if they do not overlap at all or block each other.
+    - You MUST USE @agent-implementer-agent. Never implement a feature yourself.
     - Once the entire `plan.md` file is implemented, move to the next step.
 
 3. Verify plan.md Implementation
@@ -46,14 +46,13 @@ Pass all necessary context to the subagent. If you don't have the necessary cont
 
     - You MUST USE @agent-functional-test-runner.
 
-5. Cleanup
-    - Use a general-purpose agent to ensure that any extra files or unnecessary files that were created during this feature development process have been removed. These will normally be extraneous markdown files. When in doubt, don't remove anything.
-
-6. Commit, push, create PR
+5. Commit, push, create PR
     - Use a general purpose subagent to commit and push all staged/unstaged changes then create a PR.
 
-7. PR Review
-    - Use a general purpose subagent to review the open PR. Pass the `/review` command to the subagent and ask it to fix only CRITICAL issues with the PR. Do not fix anything except CRITICAL issues that have a direct effect on the funcitonality of this application excluding expected breaking changes. Push changes.
+6. PR Review
+    - Use a general purpose subagent to review the open PR. Pass the `/review` slash command to the subagent and ask it to fix only CRITICAL issues with the PR. Do not fix anything except CRITICAL issues that have a direct effect on the funcitonality of this application excluding expected breaking changes. Push changes.
     - If no CRITICAL issues are found, this workflow is done.
+    - Do not run the test suite unless changes have been made.
+    - Do not share any project context with this agent.
 
 Once all steps are complete, end.
