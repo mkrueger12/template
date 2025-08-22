@@ -13,6 +13,7 @@ RUN apk update && \
     git \
     curl \
     bash \
+    zsh \
     # Node.js and npm for Language Servers and other tools
     nodejs \
     npm \
@@ -47,7 +48,15 @@ RUN git clone https://github.com/mkrueger12/template.git /tmp/template && \
     cp -r /tmp/template/opencode/* /root/.config/opencode/ && \
     rm -rf /tmp/template
 
-# 4. SET THE DEFAULT WORKING DIRECTORY
+# 4. COPY LOCAL OPENCODE AUTH FILE
+RUN mkdir -p /root/.local/share/opencode
+COPY auth.json /root/.local/share/opencode/auth.json
+
+# 5. COPY ZSH CONFIG FILES
+COPY .zshrc /root/.zshrc
+COPY .zshenv /root/.zshenv
+
+# 6. SET THE DEFAULT WORKING DIRECTORY
 # Sets the working directory for any subsequent Dockerfile that uses this as a base.
 WORKDIR /root
 
