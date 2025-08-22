@@ -1,26 +1,44 @@
-# Minimal base image
+# Dockerfile for a base development image with Neovim, Node.js, and AI tools.
+# This image is configured to run as the root user.
+
+# Use the minimal, security-focused Wolfi base image
 FROM cgr.dev/chainguard/wolfi-base
 
-# specify the python version
-ARG version=3.13
+# 1. INSTALL SYSTEM-WIDE DEPENDENCIES & TOOLS
+# Using a single RUN layer to reduce image size.
+RUN apk update && \
+    apk add --no-cache \
+    # Core dependencies for Neovim and installation scripts
+    neovim \
+    git \
+    curl \
+    bash \
+    # Node.js and npm for Language Servers and other tools
+    nodejs \
+    npm \
+    # Common, fast dependencies for Telescope plugin (part of LazyVim)
+    ripgrep \
+    fd \
+    # Build toolchain for compiling native Neovim plugins (e.g., treesitter)
+    gcc \
+    g++ \
+    make \
+    pkgconf \
+    linux-headers && \
+    # Install the Claude CLI tool
+    curl -fsSL https://claude.ai/install.sh | bash && \
+    # Install the OpenCode CLI tool
+    curl -fsSL https://opencode.ai/install | bash
 
-# Copy UV binary from official image
-#COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
+# 2. INSTALL LAZYVIM FOR ROOT
+# Clone the LazyVim starter config into the root user's config directory.
+# This pre-configures Neovim for any subsequent image layers.
+RUN git clone https://github.com/LazyVim/starter /root/.config/nvim && \
+    rm -rf /root/.config/nvim/.git
 
-WORKDIR /app
+# 3. SET THE DEFAULT WORKING DIRECTORY
+# Sets the working directory for any subsequent Dockerfile that uses this as a base.
+WORKDIR /root
 
-COPY requirements.txt .
-
-# Install dependencies
-RUN apk upgrade --no-cache
-RUN apk add --no-cache python-${version} py${version}-pip && \
-    pip install --upgrade pip && \
-    pip install -r requirements.txt && \
-    apk del py${version}-pip && \
-    chown -R nonroot:nonroot /app
-
-COPY . .
-
-USER nonroot
-
-ENTRYPOINT ["python", "main.py"]
+# NOTE: This base image intentionally omits a CMD or ENTRYPOINT.
+# The final command should be defined in the Dockerfile that inherits from this one.
