@@ -20,15 +20,20 @@ RUN apk update && \
     ripgrep \
     fd \
     # Build toolchain for compiling native Neovim plugins (e.g., treesitter)
-    gcc \
-    g++ \
-    make \
-    pkgconf \
-    linux-headers && \
-    # Install the Claude CLI tool
-    curl -fsSL https://claude.ai/install.sh | bash && \
-    # Install the OpenCode CLI tool
+    build-base \
+    libstdc++-dev \
+    linux-headers
+
+# Install CLI tools separately to handle PATH issues
+RUN curl -fsSL https://claude.ai/install.sh | bash && \
+    echo 'export PATH="$HOME/.local/bin:$PATH"' >> /root/.bashrc && \
     curl -fsSL https://opencode.ai/install | bash
+
+# Set PATH environment variable for containers
+ENV PATH="/root/.local/bin:/root/.opencode/bin:$PATH"
+
+# Add lazyvim alias
+RUN echo 'alias lazyvim="nvim"' >> /root/.bashrc
 
 # 2. INSTALL LAZYVIM FOR ROOT
 # Clone the LazyVim starter config into the root user's config directory.
@@ -36,7 +41,13 @@ RUN apk update && \
 RUN git clone https://github.com/LazyVim/starter /root/.config/nvim && \
     rm -rf /root/.config/nvim/.git
 
-# 3. SET THE DEFAULT WORKING DIRECTORY
+# 3. CLONE TEMPLATE REPO AND COPY OPENCODE CONFIG
+RUN git clone https://github.com/mkrueger12/template.git /tmp/template && \
+    mkdir -p /root/.config/opencode && \
+    cp -r /tmp/template/opencode/* /root/.config/opencode/ && \
+    rm -rf /tmp/template
+
+# 4. SET THE DEFAULT WORKING DIRECTORY
 # Sets the working directory for any subsequent Dockerfile that uses this as a base.
 WORKDIR /root
 
