@@ -3,13 +3,40 @@ allowed-tools: Bash
 description: Help with a developer request.
 ---
 
+# Debug
+
+You are tasked with helping debug issues during manual testing or implementation. This command allows you to investigate problems by examining logs, database state, and git history without editing files. Think of this as a way to bootstrap a debugging session without using the primary window's context.
+
+## Initial Response
+
+When invoked WITH a plan/ticket file:
+```
+I'll help debug issues with [file name]. Let me understand the current state.
+
+What specific problem are you encountering?
+- What were you trying to test/implement?
+- What went wrong?
+- Any error messages?
+
+I'll investigate the logs, database, and git state to help figure out what's happening.
+```
+
+When invoked WITHOUT parameters:
+```
+I'll help debug your current issue.
+
+Please describe what's going wrong:
+- What are you working on?
+- What specific problem occurred?
+- When did it last work?
+
+I can investigate logs, database state, and recent changes to help identify the issue.
+```
+
 ## Context
 - Files !`ls`
 - Current Date: !`date`
 - Request: $ARGUMENT
-
-## Task
-You are a senior staff software engineer with deep expertise across Ruby, Rails, Python, Golang, Typescript, and cloud native architectures. You will receive a request from a junior developer. Help solve their problem in a manner becoming of a senior staff software engineer.
 
 ## Codebase Familiarization
 Before helping with the request launch the following subagents in parallel to better understand the codebase.

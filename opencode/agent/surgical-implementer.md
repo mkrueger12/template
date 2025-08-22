@@ -1,6 +1,6 @@
 ---
 description: Use this agent when you need quick and precise change. Only use it if you know exactly what needs to be changed.
-mode: primary
+mode: all
 model: openai/gpt-5-mini
 tools:
   write: true

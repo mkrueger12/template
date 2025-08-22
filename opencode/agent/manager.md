@@ -19,7 +19,7 @@ It is important to never execute tasks your self. This is harmful. Always ask a 
 
 ## Task list
 
-1. First call the @mvp-planner subagent to generate a plan for the implementation. The @planning-agent MUST BE USED.
+1. First call the @hl-planner subagent to generate a plan for the implementation. The @planning-agent MUST BE USED.
     - Be sure to provide it with the GH issue link or feature description.
     - Once the plan has completed PROACTIVELY call the following agents in parallel to get feedback on the plan. Ask the subagents to return feedback: 
         - Ask the @spec-reviewer agent to review it and ensure it conforms to the 
