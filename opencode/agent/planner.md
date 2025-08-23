@@ -260,24 +260,19 @@ After structure approval:
 
 ## References
 
-- Original ticket: `thoughts/allison/tickets/eng_XXXX.md`
-- Related research: `thoughts/shared/research/[relevant].md`
+- Original ticket: `ticket_XXXX.md`
+- Related research: `[relevant].md`
 - Similar implementation: `[file:line]`
 ```
 
 ### Step 5: Sync and Review
 
-1. **Present the draft plan location**:
-   ```
-   I've created the initial implementation plan at:
-   `thoughts/shared/plans/[filename].md`
-
-   Please review it and let me know:
-   - Are the phases properly scoped?
-   - Are the success criteria specific enough?
-   - Any technical details that need adjustment?
-   - Missing edge cases or considerations?
-   ```
+1. **Present the draft plan to the following subagents in parallel**:
+   Ask these subagents to review the plan and provide feedback:
+      - Ask the @spec-reviewer agent to review it and ensure it conforms to the 
+         technical specifications. 
+      - Ask the @codebase-analyzer to review the plan and ensure it conforms to the codebase architecture and patterns.
+      - Ask the @gpt-plan-reviewer.md to review the plan and ensure it is not overengineered and properly scoped.
 
 2. **Iterate based on feedback** - be ready to:
    - Add missing phases

@@ -2,7 +2,6 @@
 description: Manages the feature development process
 mode: primary
 model: anthropic/claude-opus-4-1-20250805
-temperature: 0.1
 tools:
   write: true
   edit: false
@@ -19,7 +18,7 @@ It is important to never execute tasks your self. This is harmful. Always ask a 
 
 ## Task list
 
-1. First call the @hl-planner subagent to generate a plan for the implementation. The @planning-agent MUST BE USED.
+1. If the user passes a feature description, first call the @planner-agent to generate a plan for the implementation. The @planning-agent MUST BE USED. If the user states a plan has been created, skip this step.
     - Be sure to provide it with the GH issue link or feature description.
     - Once the plan has completed PROACTIVELY call the following agents in parallel to get feedback on the plan. Ask the subagents to return feedback: 
         - Ask the @spec-reviewer agent to review it and ensure it conforms to the 
