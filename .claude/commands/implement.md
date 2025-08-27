@@ -126,6 +126,8 @@ c. REFACTOR Phase - Improve Code Quality:
 - What linting or formatting tools are my disposal?
 </reasoning>
 
+Run the project lint commands targeted at the files you changed.
+
 Refactor to:
 - Improve code readability
 - Extract common functionality

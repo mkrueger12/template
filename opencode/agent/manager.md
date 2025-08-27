@@ -30,11 +30,15 @@ It is important to never execute tasks your self. This is harmful. Always ask a 
 
 2. Evaluate and Select
     - Review plan.md and select the most important UNIMPLEMENTED task from the plan.
-    - Pass the selected task and all relevant context to @implementer or @ui-developer for UI related tasks/features.
+    - Pass the selected task and all relevant context to an implementation agent listed below. The available implementation agents are:
+                - @implementer - This is the default and should handle most requests.
+                - @ui-developer - This agent should be used for UI related tasks/features.
+                - @surgical-implementer - This agent should be used for small, surgical changes that are very well defined.
+                -  @smart-contract-builder - This agent should be used for Solidity smart contract development and deployment
     - When the agent is done, verify that it has marked the task that it implemented as complete in `plan.md` and repeat this task until the entire `plan.md` file is implemented.
-    - If plan.md is not If `plan.md` is fully implemented, then repeat this task. Select the most important unimplemented task from the plan and then pass the selected task to @implementer with relevant context.
+    - If plan.md is not If `plan.md` is fully implemented, then repeat this task. Select the most important unimplemented task from the plan and then pass the selected task to an implementation agent with relevant context.
     - You may delegate parallel task if they do not overlap at all or block each other.
-    - You MUST USE @implementer or @ui-developer. Never implement a task yourself.
+    - You MUST USE an implementation agent. Never implement a task yourself.
     - Once the entire `plan.md` file is implemented, move to the next step.
 
 3. Verify plan.md Implementation
