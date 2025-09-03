@@ -34,6 +34,7 @@ Then wait for the user's research query.
    - Use the **codebase-locator** agent to find WHERE files and components live
    - Use the **codebase-analyzer** agent to understand HOW specific code works
    - Use a seperate **codebase-locator** agent if you need examples of similar implementations
+   - Use `ast-grep run [OPTIONS] --pattern <PATTERN> [PATHS]... --lang <LANG>` over `grep` or `sed`. Use `ast-grep run --help` to learn more. Use this tool to confirm file locations for changes.
 
    **For web research (only if user explicitly asks):**
    - Use the **general-purpose** agent for external documentation and resources
