@@ -1,15 +1,20 @@
+---
+description: Create a gh issue
+---
+
+
 # Research Codebase
 
-You are tasked with conducting comprehensive research across the codebase to answer user questions by spawning parallel sub-agents and synthesizing their findings.
+You are tasked with conducting comprehensive research across the codebase in order to create a detailed GitHub issue. Your goal is to detail where the developer should look in the codebase to find implementation deatils. Never provide specific implementation details. Let the developer handle this. Your guiding question is "If I were to implement this, where should I look in the codebase and what external resources should I consult?"
 
 ## Initial Setup:
 
-When this command is invoked, respond with:
+When this command is invoked, summarize the feature request and respond with:
 ```
-I'm ready to research the codebase. Please provide your research question or area of interest, and I'll analyze it thoroughly by exploring relevant components and connections.
+You want to implement [description of feature]. Shall I proceed?
 ```
 
-Then wait for the user's research query.
+Then wait for the user's approval.
 
 ## Steps to follow after receiving the research query:
 
@@ -38,11 +43,7 @@ Then wait for the user's research query.
 
    **For web research (only if user explicitly asks):**
    - Use the **general-purpose** agent for external documentation and resources
-   - Instruct them to return LINKS with their findings, and please INCLUDE those links in your final report
-
-   **For Linear tickets (if relevant):**
-   - Use the **linear-ticket-reader** agent to get full details of a specific ticket
-   - Use the **linear-searcher** agent to find related tickets or historical context
+   - Instruct them to return LINKS with their findings, and please INCLUDE those links in the github issue
 
    The key is to use these agents intelligently:
    - Start with locator agents to find what exists
@@ -59,83 +60,33 @@ Then wait for the user's research query.
    - Highlight patterns, connections, and architectural decisions
    - Answer the user's specific questions with concrete evidence
 
-5. **Generate research document:**
+5. **Generate the github issue:**
    - Use the metadata gathered in step 4
    - Structure the document with YAML frontmatter followed by content:
      ```markdown
-     ---
-     date: [Current date and time with timezone in ISO format]
-     researcher: [Researcher name from thoughts status]
-     git_commit: [Current commit hash]
-     branch: [Current branch name]
-     repository: [Repository name]
-     topic: "[User's Question/Topic]"
-     tags: [research, codebase, relevant-component-names]
-     status: complete
-     last_updated: [Current date in YYYY-MM-DD format]
-     last_updated_by: [Researcher name]
-     ---
-
-     # Research: [User's Question/Topic]
-
-     **Date**: [Current date and time with timezone from step 4]
-     **Researcher**: [Researcher name from thoughts status]
-     **Git Commit**: [Current commit hash from step 4]
-     **Branch**: [Current branch name from step 4]
-     **Repository**: [Repository name]
-
-     ## Research Question
-     [Original user query]
+     # Overview: [one sentence description of feature request]
 
      ## Summary
-     [High-level findings answering the user's question]
+     [High-level findings supporting the feature request development.]
 
      ## Detailed Findings
 
-     ### [Component/Area 1]
-     - Finding with reference ([file.ext:line](link))
-     - Connection to other components
-     - Implementation details
-
-     ### [Component/Area 2]
-     ...
-
      ## Code References
-     - `path/to/file.py:123` - Description of what's there
-     - `another/file.ts:45-67` - Description of the code block
+     - `path/to/file.py:123` - Description of what's there and why its relevant to this feature
+     - `another/file.ts:45-67` - Description of the code block and why its relevant to this feature
 
      ## Architecture Insights
-     [Patterns, conventions, and design decisions discovered]
+     [Patterns, conventions, and design decisions discovered. Review spec.txt for more details]
 
-     ## Historical Context (from thoughts/)
+     ## Historical Context (from .sessions/)
      [Relevant insights from directory with references]
 
      ## Related Research
-     [Links to other research documents if relevant/available]
+     [Links to other external research if relevant/available]
 
      ## Open Questions
      [Any areas that need further investigation]
      ```
-
-7. **Add GitHub permalinks (if applicable):**
-   - Check if on main branch or if commit is pushed: `git branch --show-current` and `git status`
-   - If on main/master or pushed, generate GitHub permalinks:
-     - Get repo info: `gh repo view --json owner,name`
-     - Create permalinks: `https://github.com/{owner}/{repo}/blob/{commit}/{file}#L{line}`
-   - Replace local file references with permalinks in the document
-
-8. **Sync and present findings:**
-   - Present a concise summary of findings to the user
-   - Include key file references for easy navigation
-   - Ask if they have follow-up questions or need clarification
-
-9. **Handle follow-up questions:**
-   - If the user has follow-up questions, append to the same research document
-   - Update the frontmatter fields `last_updated` and `last_updated_by` to reflect the update
-   - Add `last_updated_note: "Added follow-up research for [brief description]"` to frontmatter
-   - Add a new section: `## Follow-up Research [timestamp]`
-   - Spawn new sub-agents as needed for additional investigation
-   - Continue updating the document and syncing
 
 ## Important notes:
 - Always use parallel Task agents to maximize efficiency and minimize context usage
@@ -161,4 +112,5 @@ Then wait for the user's research query.
   - Keep frontmatter fields consistent across all research documents
   - Update frontmatter when adding follow-up research
   - Use snake_case for multi-word field names (e.g., `last_updated`, `git_commit`)
-  - Tags should be relevant to the research topic and components studied
+  - Never include code blocks in the gh issue
+  - Do NOT IMPLEMENT. Return once the issue is created.
