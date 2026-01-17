@@ -1,0 +1,18 @@
+{
+  "claude-plugins-official": {
+    "source": {
+      "source": "github",
+      "repo": "anthropics/claude-plugins-official"
+    },
+    "installLocation": "/home/max/.claude/plugins/marketplaces/claude-plugins-official",
+    "lastUpdated": "2026-01-17T16:41:48.645Z"
+  },
+  "vieko": {
+    "source": {
+      "source": "github",
+      "repo": "vieko/bonfire"
+    },
+    "installLocation": "/home/max/.claude/plugins/marketplaces/vieko",
+    "lastUpdated": "2026-01-17T06:08:49.171Z"
+  }
+}
