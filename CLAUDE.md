@@ -4,22 +4,18 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**WHY**: [Brief 1-2 sentence project purpose]
+**WHY**: Starter template for Claude Code projects with pre-configured agents, commands, and plugins.
 
 **WHAT**:
-- Tech stack: [e.g., TypeScript, React, Node.js]
-- Architecture: [e.g., monorepo, microservices, CLI tool]
+- Tech stack: Bash, Markdown
+- Architecture: Claude Code configuration template
 
 **HOW**:
 ```bash
-# Build
-npm run build
+# Load environment variables
+source env_vars.sh
 
-# Test
-npm test
-
-# Development
-npm run dev
+# Or rely on the pre-prompt hook to load .env automatically
 ```
 
 ## Sessions Pattern (Optional)
