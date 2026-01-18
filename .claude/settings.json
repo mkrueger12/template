@@ -6,7 +6,18 @@
         "hooks": [
           {
             "type": "command",
-            "command": "/home/max/workspace/code/template/env_vars.sh"
+            "command": "./env_vars.sh"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "./.claude/scripts/redact-echo-hook"
           }
         ]
       }
