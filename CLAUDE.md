@@ -42,3 +42,10 @@ Configure the Linear MCP server in your Claude settings.
 See: https://github.com/anthropics/claude-code/blob/main/docs/mcp.md
 
 Commands will gracefully handle missing tools and prompt for manual input.
+
+- Never echo sensative env vars directly. Instead
+
+```bash
+# Returns exit code 0 (true) if set, 1 (false) if not
+  [ -n "$VARIABLE" ]
+```
