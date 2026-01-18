@@ -12,8 +12,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **HOW**:
 ```bash
-# Load environment variables
-source env_vars.sh
+# Load environment variables manually
+source .claude/scripts/env_vars.sh
 
 # Or rely on the pre-prompt hook to load .env automatically
 ```

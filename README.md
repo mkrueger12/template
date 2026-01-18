@@ -22,12 +22,13 @@ A starter template for Claude Code projects with pre-configured agents, commands
 ├── agents/          # Custom agent definitions
 ├── commands/        # Slash commands (/plan, /gh_issue, etc.)
 ├── plugins/         # Installed plugins and marketplaces
+├── scripts/         # Shell scripts (env_vars.sh, etc.)
 └── settings.local.json
 ```
 
 ## Environment Variables
 
-The `env_vars.sh` script automatically loads variables from `.env` into Claude Code sessions. Variables in `.env` are exported and made available during your session.
+The `.claude/scripts/env_vars.sh` script automatically loads variables from `.env` into Claude Code sessions via hooks. Variables in `.env` are exported and made available during your session.
 
 ## Configuration
 
@@ -35,7 +36,3 @@ Edit `CLAUDE.md` to configure:
 - Project purpose and tech stack
 - Build, test, and dev commands
 - Session workflow preferences
-
-## License
-
-MIT
